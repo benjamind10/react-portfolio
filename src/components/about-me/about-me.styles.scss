@@ -1,0 +1,35 @@
+.about-me,
+.work,
+.contact-me {
+  align-items: flex-start;
+  flex-direction: column;
+  scroll-margin-top: 3rem;
+}
+
+.about-me {
+  background-color: var(--primary-color);
+}
+
+.about-me-text,
+.work-text,
+.contact-me-text {
+  flex: 1;
+  margin-bottom: 50px;
+  font-size: 3em;
+  align-self: center;
+}
+
+.about-me-text header {
+  margin-right: 10px;
+}
+
+.about-me-body {
+  padding: 0 15vw;
+  font-size: 20px;
+  text-align: center;
+}
+
+.about-me img {
+  align-self: center;
+  width: 15vw;
+}
