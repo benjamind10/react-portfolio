@@ -1,10 +1,13 @@
-import './contact.styles.scss';
+import {
+  ContactMeContainer,
+  ContactContainer,
+} from './contact.styles.jsx';
 
 const Contact = () => {
   return (
-    <section id='contact-me' class='contact-me'>
+    <ContactMeContainer id='contact-me' class='contact-me'>
       <header class='contact-me-text'>Contact Me:</header>
-      <div class='container'>
+      <ContactContainer class='container'>
         <div class='phone'>
           <img
             src={require(`../../assets/tele.jpeg`)}
@@ -47,8 +50,8 @@ const Contact = () => {
             <h3>LinkedIn</h3>
           </a>
         </div>
-      </div>
-    </section>
+      </ContactContainer>
+    </ContactMeContainer>
   );
 };
 

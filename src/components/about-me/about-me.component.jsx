@@ -1,10 +1,14 @@
-import './about-me.styles.scss';
+import {
+  AboutMeContainer,
+  AboutMeText,
+  AboutMeBody,
+} from './about-me.styles.jsx';
 
 const AboutMe = () => {
   return (
-    <section id='about-me' className='about-me'>
-      <header className='about-me-text'>About Me</header>
-      <div className='about-me-body'>
+    <AboutMeContainer id='about-me'>
+      <AboutMeText>About Me</AboutMeText>
+      <AboutMeBody className='about-me-body'>
         <p>
           I am a passionate learner when it comes to anything computer
           related. For my 9th birthday, was gifted a Gateway computer
@@ -21,8 +25,8 @@ const AboutMe = () => {
         </p>
 
         <img src={require(`../../assets/avatar.png`)} alt='avatar' />
-      </div>
-    </section>
+      </AboutMeBody>
+    </AboutMeContainer>
   );
 };
 
