@@ -4,6 +4,7 @@ import Projects from './components/projects/projects.component';
 const App = () => {
   return (
     <div>
+      <AboutMe />
       <Projects />
     </div>
   );

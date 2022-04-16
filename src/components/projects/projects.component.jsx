@@ -1,12 +1,14 @@
 import ProjectCard from '../project-card/project-card.component';
 
+import './projects.styles.scss';
+
 const projects = [
   {
     id: 1,
     name: 'COD Connect',
     image: 'grp_project2.png',
     techs: ['Node', 'Express', 'Handlebars'],
-    gitHub: 'https://benjamind10.github.io/gaming-blog',
+    gitHub: 'https://github.com/benjamind10/gaming-blog',
     liveUrl: 'https://rocky-sierra-14761.herokuapp.com/',
   },
   {

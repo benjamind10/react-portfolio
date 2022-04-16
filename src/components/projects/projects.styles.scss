@@ -1,0 +1,65 @@
+.work,
+.work header {
+  background-color: var(--tertiary-color);
+}
+
+.work a {
+  text-decoration: none;
+}
+
+.work-text {
+  color: var(--primary-color);
+}
+
+.work h3,
+.work p {
+  color: var(--primary-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.work p {
+  font-size: 1em;
+}
+
+.work h3,
+footer a,
+footer h2,
+.work p {
+  text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+.work img {
+  justify-items: center;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  border: 3px solid var(--primary-color);
+  width: 50vw;
+}
+
+.row {
+  margin: auto;
+  width: 50%;
+}
+
+.row a {
+  text-decoration: none;
+}
+
+.column {
+  padding: 0 20vw;
+  justify-content: center;
+}
+
+.column img {
+  margin: 10px;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.column p {
+  color: var(--primary-color);
+}
