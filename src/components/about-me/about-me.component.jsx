@@ -2,9 +2,9 @@ import './about-me.styles.scss';
 
 const AboutMe = () => {
   return (
-    <section id='about-me' class='about-me'>
-      <header class='about-me-text'>About Me</header>
-      <div class='about-me-body'>
+    <section id='about-me' className='about-me'>
+      <header className='about-me-text'>About Me</header>
+      <div className='about-me-body'>
         <p>
           I am a passionate learner when it comes to anything computer
           related. For my 9th birthday, was gifted a Gateway computer
