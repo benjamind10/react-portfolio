@@ -1,10 +1,14 @@
-import './header.styles.scss';
+import { HeroContainer, HeroCta } from './header.styles';
 
 const Header = () => {
   return (
-    <section class='hero'>
-      <header class='hero-cta'>Web and App Developer</header>
-    </section>
+    <HeroContainer
+      imageUrl={require(`../../assets/hero_banner.jpeg`)}
+    >
+      <HeroContainer as='header'>
+        <span>Web and App Developer</span>
+      </HeroContainer>
+    </HeroContainer>
   );
 };
 

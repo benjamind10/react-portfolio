@@ -27,7 +27,6 @@ section {
 .nav-bar nav ul,
 .hero,
 .about-me,
-.work,
 .contact-me,
 .column,
 .container,
@@ -63,11 +62,11 @@ section {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 815px) {
-  .nav-bar nav ul li a {
+  .nav-link {
     font-size: 1em;
   }
 
-  .nav-bar h1 {
+  .nav-bar span {
     font-size: 1.5em;
   }
 
@@ -93,8 +92,8 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .nav-bar nav ul li a {
-    font-size: 0.8em;
+  .nav-link {
+    font-size: 0em;
     padding: 0 5px;
   }
 
@@ -129,7 +128,7 @@ section {
 }
 
 @media screen and (max-width: 400px) {
-  .nav-bar nav ul li a {
-    font-size: 0.5em;
+  .nav-link {
+    font-size: 0.4em;
   }
 }

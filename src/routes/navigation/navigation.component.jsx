@@ -21,9 +21,14 @@ const Navigation = () => {
           <Link className='nav-link' to='/projects'>
             Projects
           </Link>
-          <Link className='nav-link' to='/resume'>
+          <a
+            className='nav-link'
+            href='https://resume.io/r/JiEIxhh2I'
+            target='_blank'
+            rel='noreferrer'
+          >
             Resume
-          </Link>
+          </a>
           <Link className='nav-link' to='/contact'>
             Contact Me
           </Link>

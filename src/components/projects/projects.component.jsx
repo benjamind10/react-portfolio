@@ -58,6 +58,7 @@ const Projects = () => {
   return (
     <section className='work' id='work'>
       <header class='work-text'>Current Projects:</header>
+      <br />
       <div className='column'>
         {projects.map(project => (
           <ProjectCard key={project.id} {...project} />
