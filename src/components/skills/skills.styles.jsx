@@ -13,6 +13,7 @@ export const SkillsText = styled.header`
   font-size: 3em;
   align-self: center;
   text-align: center;
+  color: var(--fourth-color);
 
   header {
     margin-right: 10px;
@@ -32,9 +33,9 @@ export const SkillsBody = styled.div`
 `;
 
 export const SkillsList = styled.ul`
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
   list-style-type: none;
   margin-bottom: 10%;
 `;

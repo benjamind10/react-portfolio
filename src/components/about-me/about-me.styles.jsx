@@ -13,6 +13,7 @@ export const AboutMeText = styled.header`
   font-size: 3em;
   align-self: center;
   text-align: center;
+  color: var(--fourth-color);
 
   header {
     margin-right: 10px;
