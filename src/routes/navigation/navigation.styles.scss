@@ -39,10 +39,18 @@
   color: var(--primary-color);
 }
 
+.nav-link:active {
+  color: var(--fourth-color);
+}
+
 .nav-bar a:hover {
   color: var(--fourth-color);
   border-radius: 15px;
   text-shadow: none;
+}
+
+.nav-bar a:active {
+  color: var(--fourth-color);
 }
 
 .logo {

@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 
 import { ReactComponent as MainLogo } from '../../assets/crown.svg';
 import Header from '../../components/header/header.component';
@@ -10,28 +10,31 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className='nav-bar'>
-        <Link to='/'>
+        <NavLink
+          className='link'
+          activeStyle={{ color: 'red' }}
+          to='/'
+        >
           <MainLogo className='logo' />
           <span>Ben Duran</span>
-        </Link>
+        </NavLink>
         <div className='nav-links-container'>
-          <Link className='nav-link' to='/'>
-            About Me
-          </Link>
-          <Link className='nav-link' to='/projects'>
-            Projects
-          </Link>
-          <a
+          <NavLink
+            activeStyle={{ color: 'red' }}
             className='nav-link'
-            href='https://resume.io/r/JiEIxhh2I'
-            target='_blank'
-            rel='noreferrer'
+            to='/'
           >
+            About Me
+          </NavLink>
+          <NavLink className='nav-link' to='/projects'>
+            Projects
+          </NavLink>
+          <NavLink className='nav-link' to='/resume'>
             Resume
-          </a>
-          <Link className='nav-link' to='/contact'>
+          </NavLink>
+          <NavLink className='nav-link' to='/contact'>
             Contact Me
-          </Link>
+          </NavLink>
         </div>
       </div>
       <Header />

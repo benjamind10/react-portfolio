@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 
 import Contact from '../../components/contact/contact.component';
 
-const Home = () => {
+const ContactMe = () => {
   return (
     <div>
       <Contact />
@@ -11,4 +11,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ContactMe;

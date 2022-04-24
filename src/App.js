@@ -4,8 +4,9 @@ import { Fragment } from 'react';
 import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
 import Work from './routes/work/work.component';
-import Contact from './components/contact/contact.component';
+import ContactMe from './routes/contact-me/contact-me.component';
 import Footer from './components/footer/footer.component';
+import Resume from './routes/resume/resume.component';
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
         <Route path='/' element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path='/projects' element={<Work />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/contact' element={<ContactMe />} />
         </Route>
       </Routes>
       <Footer />

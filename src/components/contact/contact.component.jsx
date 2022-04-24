@@ -3,10 +3,15 @@ import {
   ContactContainer,
 } from './contact.styles.jsx';
 
+import Form from '../form/form.component.jsx';
+
 const Contact = () => {
   return (
     <ContactMeContainer id='contact-me' class='contact-me'>
-      <header class='contact-me-text'>Contact Me:</header>
+      <div className='contact-form flex flex-col justify-center items-center'>
+        <Form />
+      </div>
+      <br />
       <ContactContainer class='container'>
         <div class='phone'>
           <img
