@@ -1,5 +1,6 @@
 const ProjectCard = ({ id, name, ...otherProps }) => {
   const { liveUrl, image, techs, description, gitHub } = otherProps;
+
   return (
     <div className={id === 1 ? 'project1' : 'project'}>
       <a href={liveUrl} target='_blank' rel='noreferrer'>

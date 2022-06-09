@@ -40,7 +40,7 @@ const Navigation = () => {
             <li className='nav-item'>
               <a
                 className='nav-link'
-                href='https://docs.google.com/document/d/111mBhA57fuBtF6vzy-9VAPTcOctePFCQ2_IgX84GIZs/edit?usp=sharing'
+                href='https://docs.google.com/document/d/1b_eIkjsfNS31_3ax977IkqNiJWDCbS3i7MwP5Q7GlMw/edit'
                 target='_blank'
                 rel='noreferrer'
               >

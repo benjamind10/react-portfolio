@@ -1,9 +1,11 @@
+import Form from '../form/form.component';
 import './contact-me.styles.css';
 
 const Contact = () => {
   return (
     <section id='contact-me' className='contact-me'>
       <header className='contact-me-text'>Contact Me:</header>
+      <Form />
       <div className='container'>
         <div className='phone'>
           <img
@@ -48,6 +50,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      <br />
     </section>
   );
 };
