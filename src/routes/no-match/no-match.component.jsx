@@ -1,16 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-
-import Header from '../../components/header/header.component';
-import Navigation from '../../components/navigation/navigation.component';
+import { Link, Outlet } from 'react-router-dom';
 
 const NoMatch = () => {
   return (
     <>
-      <Navigation />
-      <Header />
       <div>
         <h1>404 Page Not Found</h1>
+        <Link to='/'>Home</Link>
         <h1>
           <span role='img' aria-label='Face With Rolling Eyes Emoji'>
             🙄
