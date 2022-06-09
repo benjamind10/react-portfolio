@@ -1,13 +1,16 @@
-import { Outlet } from 'react-router-dom';
-
-import AboutMe from '../../components/about-me/about-me.component';
+import Navigation from '../../components/navigation/navigation.component';
+import Header from '../../components/header/header.component';
+import About from '../../components/about/about.component';
+import Projects from '../../components/projects/projects.component';
 
 const Home = () => {
   return (
-    <div>
-      <AboutMe />
-      <Outlet />
-    </div>
+    <>
+      <Navigation />
+      <Header />
+      <About />
+      <Projects />
+    </>
   );
 };
 

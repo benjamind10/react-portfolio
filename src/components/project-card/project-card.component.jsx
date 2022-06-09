@@ -1,22 +1,31 @@
-import { ProjectContainer } from './project-card.styles.jsx';
-
 const ProjectCard = ({ id, name, ...otherProps }) => {
-  const { liveUrl, image, techs } = otherProps;
+  const { liveUrl, image, techs, description, gitHub } = otherProps;
   return (
-    <ProjectContainer>
+    <div className={id === 1 ? 'project1' : 'project'}>
       <a href={liveUrl} target='_blank' rel='noreferrer'>
-        <img src={require(`../../assets/${image}`)} alt={name} />
-        <div>
-          {techs.map((tech, i) => (
-            <p key={i}>{tech}</p>
-          ))}
+        <img
+          className='project-image'
+          src={require(`../../assets/${image}`)}
+          alt={name}
+        />
+        <div className='project-text'>
           <h3>{name}</h3>
+          <p>
+            {techs}
+            <br />
+            {description}
+          </p>
+          <a
+            className='project-text-link'
+            href={gitHub}
+            target='_blank'
+            rel='noreferrer'
+          >
+            Link to GitHub
+          </a>
         </div>
       </a>
-      <a href={otherProps.gitHub} target='_blank' rel='noreferrer'>
-        GitHub Link
-      </a>
-    </ProjectContainer>
+    </div>
   );
 };
 

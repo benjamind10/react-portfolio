@@ -1,0 +1,305 @@
+:root {
+  --primary-color: #d9dcd6;
+  --secondary-color: black;
+  --tertiary-color: #0a5386;
+  --fourth-color: #c32571;
+}
+
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Element Selectors */
+body {
+  color: var(--tertiary-color);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Grouped CSS */
+.nav-bar,
+.nav-bar nav ul,
+.hero,
+.about-me,
+.work,
+.contact-me,
+.column,
+.container,
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Work Section */
+.work,
+.work header {
+  background-color: var(--tertiary-color);
+}
+
+.project-image {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.project-image:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
+.work a {
+  text-decoration: none;
+}
+
+.work-text {
+  color: var(--primary-color);
+}
+
+.work h3,
+.work p {
+  color: var(--primary-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.work p {
+  font-size: 1em;
+}
+
+.work h3,
+footer a,
+footer h2,
+.work p {
+  text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+.work img {
+  justify-items: center;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  border: 3px solid var(--primary-color);
+  width: 50vw;
+}
+
+.row {
+  margin: auto;
+  width: 50%;
+}
+
+.row a {
+  text-decoration: none;
+}
+
+.column {
+  padding: 0 10vw;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.column img {
+  max-width: 200px;
+  max-height: 95px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.column p {
+  color: var(--primary-color);
+  width: 300px;
+}
+.project {
+  text-align: center;
+}
+
+.project p {
+  padding-top: 8px;
+}
+
+.project-text-link {
+  text-align: center;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: var(--secondary-color);
+}
+
+/* Contact me Section */
+.contact-me {
+  background-color: var(--primary-color);
+}
+.contact-me a {
+  color: var(--tertiary-color);
+}
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.container h3 {
+  padding-top: 10px;
+  text-decoration: underline;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.container img {
+  width: 2.5vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FOOTER STYLES START */
+footer {
+  background: var(--tertiary-color);
+  padding: 40px 35px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--primary-color);
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--primary-color);
+}
+
+/* Burger Menu */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1130px) {
+  .column {
+    padding: 0 10em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+    padding: 0;
+  }
+
+  .about-me-text,
+  .work-text,
+  .contact-me-text {
+    margin-bottom: 15px;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 815px) {
+  .nav-bar nav ul li a {
+    font-size: 2em;
+  }
+
+  .nav-bar span {
+    font-size: 1.5em;
+  }
+
+  .nav-bar .logo {
+    width: 1.5em;
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .container h3 {
+    padding: 0 5px;
+  }
+  .work p {
+    font-size: 0.5em;
+  }
+
+  .column img {
+    max-width: 250px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .nav-bar nav ul li a {
+    font-size: 0.8em;
+    padding: 0 5px;
+  }
+
+  .nav-bar .logo {
+    width: 2.5em;
+  }
+
+  .container h3,
+  .about-me-body p {
+    font-size: 0.8em;
+  }
+
+  .about-me-text,
+  .work-text,
+  .contact-me-text {
+    font-size: 2em;
+  }
+
+  .hero-cta {
+    font-size: 1.5em;
+    padding-right: 35px;
+  }
+
+  .column img {
+    max-width: 120px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+  .nav-item a {
+    color: black;
+  }
+}

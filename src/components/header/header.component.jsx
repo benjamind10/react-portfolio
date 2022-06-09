@@ -1,14 +1,12 @@
-import { HeroContainer, HeroCta } from './header.styles';
+import './header.styles.css';
 
 const Header = () => {
   return (
-    <HeroContainer
-      imageUrl={require(`../../assets/hero_banner.jpeg`)}
-    >
-      <HeroContainer as='header'>
+    <div className='hero'>
+      <div className='hero-cta'>
         <span>Web and App Developer</span>
-      </HeroContainer>
-    </HeroContainer>
+      </div>
+    </div>
   );
 };
 
