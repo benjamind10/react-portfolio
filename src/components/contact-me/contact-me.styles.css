@@ -1,0 +1,51 @@
+/* Contact me Section */
+.contact-me {
+  background-color: var(--primary-color);
+}
+.contact-me a {
+  color: var(--tertiary-color);
+}
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.container h3 {
+  padding-top: 10px;
+  text-decoration: underline;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.container img {
+  width: 2.5vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FOOTER STYLES START */
+footer {
+  background: var(--tertiary-color);
+  padding: 40px 35px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--primary-color);
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--primary-color);
+}
