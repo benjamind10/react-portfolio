@@ -19,7 +19,7 @@ const Navigation = () => {
         </span>
         <nav className='navbar'>
           <ul
-            onClick={toggle ? 'active' : ''}
+            onClick={() => setToggle(!toggle)}
             className={`nav-item nav-menu ${toggle ? 'active' : ''}`}
           >
             <li className='nav-item'>
