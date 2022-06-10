@@ -5,6 +5,52 @@
   --fourth-color: #c32571;
 }
 
+/* This fires as soon as the element enters the dorm */
+.list-transition-enter,
+.list-transition-appear {
+  /*We give the list the initial dimension of the list button*/
+  top: 0;
+  width: 120px;
+  max-height: 40px;
+  color: transparent;
+  background-color: #5a564c;
+}
+/* This is where we can add the transition*/
+.list-transition-enter-active,
+.list-transition-appear-active {
+  top: 45px;
+  width: 200px;
+  max-height: 200px;
+  background-color: #9e8949;
+  transition: all 400ms;
+}
+
+/* This fires as soon as the this.state.showList is false */
+.list-transition-exit {
+  top: 45px;
+  width: 200px;
+  max-height: 200px;
+  background-color: #9e8949;
+}
+/* fires as element leaves the DOM*/
+.list-transition-exit-active {
+  top: 0;
+  width: 120px;
+  max-height: 40px;
+  color: transparent;
+  background-color: #5a564c;
+  transition: all 400ms;
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
 /* Universal Selector */
 * {
   box-sizing: border-box;
@@ -40,155 +86,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Work Section */
-.work,
-.work header {
-  background-color: var(--tertiary-color);
-}
-
-.project-image {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: all 1s ease;
-}
-
-.project-image:hover {
-  filter: grayscale(0%);
-  filter: gray;
-  -webkit-filter: grayscale(0%);
-  filter: none;
-  transition: 1s ease;
-}
-
-.work a {
-  text-decoration: none;
-}
-
-.work-text {
-  color: var(--primary-color);
-}
-
-.work h3,
-.work p {
-  color: var(--primary-color);
-  text-align: center;
-  text-decoration: none;
-}
-
-.work p {
-  font-size: 1em;
-}
-
-.work h3,
-footer a,
-footer h2,
-.work p {
-  text-shadow: 0 0 10px rgb(0 0 0 / 50%);
-}
-
-.work img {
-  justify-items: center;
-  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-  border: 3px solid var(--primary-color);
-  width: 50vw;
-}
-
-.row {
-  margin: auto;
-  width: 50%;
-}
-
-.row a {
-  text-decoration: none;
-}
-
-.column {
-  padding: 0 10vw;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-}
-
-.column img {
-  max-width: 200px;
-  max-height: 95px;
-  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-}
-
-.column p {
-  color: var(--primary-color);
-  width: 300px;
-}
-.project {
-  text-align: center;
-}
-
-.project p {
-  padding-top: 8px;
-}
-
-.project-text-link {
-  text-align: center;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  color: var(--secondary-color);
-}
-
-/* Contact me Section */
-.contact-me {
-  background-color: var(--primary-color);
-}
-.contact-me a {
-  color: var(--tertiary-color);
-}
-.container {
-  width: 80vw;
-  margin: 0 auto;
-  justify-items: center;
-  justify-content: space-around;
-}
-
-.container h3 {
-  padding-top: 10px;
-  text-decoration: underline;
-  font-size: 1.3em;
-  text-align: center;
-}
-
-.container img {
-  width: 2.5vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* FOOTER STYLES START */
-footer {
-  background: var(--tertiary-color);
-  padding: 40px 35px;
-  justify-content: space-between;
-  width: 100%;
-}
-
-footer h2 {
-  color: var(--primary-color);
-  font-size: 1em;
-  margin: 0;
-  text-align: center;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: var(--primary-color);
-}
-
 /* Burger Menu */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -211,7 +108,7 @@ footer a {
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 845px) {
   .nav-bar nav ul li a {
     font-size: 2em;
   }
@@ -222,6 +119,10 @@ footer a {
 
   .nav-bar .logo {
     width: 1.5em;
+  }
+
+  .project-text {
+    font-size: 1.5em;
   }
 
   .container {
@@ -260,6 +161,10 @@ footer a {
   .work-text,
   .contact-me-text {
     font-size: 2em;
+  }
+
+  .project-text {
+    font-size: 1.5em;
   }
 
   .hero-cta {

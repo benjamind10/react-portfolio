@@ -1,4 +1,5 @@
 import Form from '../form/form.component';
+
 import './contact-me.styles.css';
 
 const Contact = () => {

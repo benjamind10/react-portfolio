@@ -30,7 +30,7 @@ const Form = () => {
   };
 
   return (
-    <div class='form-style-6'>
+    <div className='form-style-6'>
       <h1>Send Me A Message</h1>
       <form ref={form} onSubmit={sendEmail}>
         <input

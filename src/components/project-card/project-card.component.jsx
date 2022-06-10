@@ -1,3 +1,5 @@
+import './project-card.styles.css';
+
 const ProjectCard = ({ id, name, ...otherProps }) => {
   const { liveUrl, image, techs, description, gitHub } = otherProps;
 
@@ -11,20 +13,21 @@ const ProjectCard = ({ id, name, ...otherProps }) => {
         />
         <div className='project-text'>
           <h3>{name}</h3>
-          <p>
-            {techs}
-            <br />
-            {description}
-          </p>
-          <a
-            className='project-text-link'
-            href={gitHub}
-            target='_blank'
-            rel='noreferrer'
-          >
-            Link to GitHub
-          </a>
+          {techs.map((tech, idx) => (
+            <p key={idx} className='techs'>
+              {tech}
+            </p>
+          ))}
+          <p>{description}</p>
         </div>
+      </a>
+      <a
+        className='project-text-link'
+        href={gitHub}
+        target='_blank'
+        rel='noreferrer'
+      >
+        Link to GitHub
       </a>
     </div>
   );
